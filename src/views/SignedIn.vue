@@ -20,6 +20,7 @@ onMounted(async () => {
     await loginCallback();
   } catch (e: any) {
     error_message.value = e.message;
+    console.error(e);
   }
 });
 </script>

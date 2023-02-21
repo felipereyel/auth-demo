@@ -17,7 +17,7 @@ export async function init() {
     includeIdTokenInSilentRenew: true,
     redirect_uri: `${location.origin}/signed-in`,
     metadataSeed: {
-      end_session_endpoint: `${AUTHORITY}/v2/logout?client_id=${CLIENT_ID}&returnTo=${location.origin}/signed-out`, // auth0 hack
+      // end_session_endpoint: `${AUTHORITY}/v2/logout?client_id=${CLIENT_ID}&returnTo=${location.origin}/signed-out`, // auth0 hack
     },
     userStore: new WebStorageStateStore({ store: localStorage }),
   });
